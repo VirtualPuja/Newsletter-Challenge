@@ -1,0 +1,15 @@
+body {
+  background-color: #15008c;
+}
+.card{ 
+  margin-top: 50px;
+  width: 800px;
+  height: 500px;
+  border: 1px solid white;
+  border-radius: 30px;
+  background-color: white;
+}
+ul {list-style: none;}
+.uis-check-circle {color: #F13E7E;}
+h2 {font-weight: bold;}
+h6 {font-size: 12px;}
