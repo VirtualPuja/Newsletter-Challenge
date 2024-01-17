@@ -13,3 +13,23 @@ ul {list-style: none;}
 .uis-check-circle {color: #F13E7E;}
 h2 {font-weight: bold;}
 h6 {font-size: 12px;}
+@media only screen and (max-width: 481px){
+  .card{
+    display:flex;
+        flex-direction:column-reverse;
+        justify-content:flex-start;
+        align-items:center;
+        padding:20px;
+        margin:20px;
+    width: 380px;
+    height: 850px;    
+}
+  .row{
+        display:flex;
+        flex-direction:column-reverse;}
+  svg{
+    width:400px;
+    height:300px;
+  }
+
+}
