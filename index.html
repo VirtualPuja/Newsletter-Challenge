@@ -2,38 +2,41 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <link rel="stylesheet" href="styles.css">
+  <!--Bootstrap 5-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
   <!--Unicons-->
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/solid.css">   
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
 </head>
 <body>
   <main>
-
+<!--create a container for the card with a margin start of 5 (bootstrap 5 margin spacing shorthand)-->
+<!--https://getbootstrap.com/docs/5.0/utilities/spacing/-->
     <div class="card ms-5">
+<!--create a container for all of the content (it's not necessary, but it's more organized this way)-->
       <div class="card-body">
+<!--create grid system which has a total of 12 columns and we only need one row-->
         <div class="row">
         <div class="col-md-6 itemb">
         <h2 class="card-title ms-5">Stay Updated</h5>
         <p class="ms-5">Join 60,000+ product managers receiving monthly updates on:</p>
-          <ul class="ms-3">
-        <li><i class="uis uis-check-circle"></i> Product discovery and building what matters</li>
-        <li><i class="uis uis-check-circle"></i> Measuring to ensure updates are a success</li>
-       <li><i class="uis uis-check-circle"></i> And much more!</li>
-     </ul>
+        <ul class="ms-3">
+          <li><i class="uis uis-check-circle"></i> Product discovery and building what matters</li>
+          <li><i class="uis uis-check-circle"></i> Measuring to ensure updates are a success</li>
+          <li><i class="uis uis-check-circle"></i> And much more!</li>
+        </ul>
+<!--create a form for the email inclduing the submit button-->
         <form class="ms-5">
           <div class="mb-3 mt-3">
           <label for="email" class="form-label">Email:</label>
             <input type="email" class="form-control" id="email" placeholder="email@company.com" name="email">
           </div>
-          <button type="submit" class="btn btn-primary">Subscribe to Monthly Newsletter</button>
+          <button type="submit" class="btn btn-primary" id="subbttn">Subscribe to Monthly Newsletter</button>
           </form>
              <!--https://www.w3schools.com/bootstrap5/bootstrap_forms.php-->
-        <!--https://getbootstrap.com/docs/5.0/utilities/spacing/-->
-        <div class="alert alert-success alert-dismissible fade show mt-3" role="alert">
+        <div class="alert alert-success alert-dismissible fade show mt-3" id="successmess" role="alert">
           <strong>Thanks for subscribing!</strong>   
           We have sent a confirmation email. 
           Please open it and click the button inside to confirm your subscription.
