@@ -13,9 +13,8 @@ ul {list-style: none;}
 .uis-check-circle {color: #F13E7E;}
 h2 {font-weight: bold;}
 h6 {font-size: 12px;}
-
+/**hide mobile image when desktop screen**/
 @media (min-width: 577px) {
-
   .mobileimg{ 
     display:none; }
   .desktopimg{
@@ -23,6 +22,7 @@ h6 {font-size: 12px;}
   }
   }
 
+  /**mobile screen - no desktop image and flip card so image is on top ---> use flexbox for that **/
 @media (max-width: 576px) {
   .desktopimg{
     display: none;} 
@@ -30,7 +30,9 @@ h6 {font-size: 12px;}
     width: 400px;
     display: flex;  
     }
-  .row{
-    display:flex;
+  .row{  
     flex-direction:column-reverse;}
 }
+
+  /**https://github.com/Mungai47/Newsletter-Sign-up-Form-with-Success-Message/blob/main/css/style.css**/
+  /**https://www.frontendmentor.io/solutions/newsletter-sign-up-form-using-html-css-js-bootstrap-kW22V2mera**/
